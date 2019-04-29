@@ -21,16 +21,16 @@ def execDic(numLen):
         elif 1 < i/10 < 100000:
             s = "0"*(numLen-5) + str(i)
             writeFile(numLen,s)
-
+    print("Done! OK!")
             
 def writeFile(numLen,password):
     with open("password.txt","a") as f:
-        f.write(password + "\r")
+        f.write(password + "\n")
 
 
 def _h():
     print("Usage: fullNum.py -h    --help")
-    print("        fullNum.py -n 4,A num of length 4")
+    print("        fullNum.py -n 4, A num of length 4")
     #print("        fullNum.py 4,A num of length 4")
 
 
