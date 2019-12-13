@@ -16,10 +16,10 @@ def execDic(numLen):
             s = "0"*(numLen-4) + str(i)
             writeFile(numLen,s)
         elif 1 < i/10 < 10000:
-            s = "0"*(numLen-4) + str(i)
+            s = "0"*(numLen-5) + str(i)
             writeFile(numLen,s)
         elif 1 < i/10 < 100000:
-            s = "0"*(numLen-5) + str(i)
+            s = "0"*(numLen-6) + str(i)
             writeFile(numLen,s)
     print("Done! OK!")
             
